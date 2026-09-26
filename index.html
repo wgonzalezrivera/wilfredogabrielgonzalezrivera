@@ -204,14 +204,6 @@
       margin: 0 0 20px;
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-    .skills-grid strong { color: var(--text-main); font-weight: bold; }
-    .skills-grid p { color: var(--text-muted); margin: 0; font-size: 16px; line-height: 1.6; }
-
     .awards-list {
       display: grid;
       grid-template-columns: 1fr;
@@ -329,7 +321,6 @@
         <button class="tab-btn active" onclick="openTab(event, 'tab-about')">About</button>
         <button class="tab-btn" onclick="openTab(event, 'tab-education')">Education</button>
         <button class="tab-btn" onclick="openTab(event, 'tab-experience')">Experience</button>
-        <button class="tab-btn" onclick="openTab(event, 'tab-skills')">Skills</button>
         <button class="tab-btn" onclick="openTab(event, 'tab-publications')">Publications</button>
         <button class="tab-btn" onclick="openTab(event, 'tab-honors')">Honors & Awards</button>
       </div>
@@ -347,7 +338,7 @@
             
             <p class="body-text">As a Puerto Rican, he is committed to understanding how we study complex traits and diseases in admixed populations and improving the utility of clinical risk prediction in genetics. This dedication aims to lead to more inclusive, accurate, and impactful healthcare for all.</p>
             
-            <p class="body-text">Wilfredo's is a leader in the Biomedical Informatics field, having won prestigious awards such as the SMDP Scholar, Sloan Fellowship, the ARCS Fellowship, the NIH-T15 Fellowship, and being recognized as UCSD’s Biomedical Informatics Trainee of the Year.</p>
+            <p class="body-text">Wilfredo is a leader in the Biomedical Informatics field, having won prestigious awards such as the SMDP Scholar, Sloan Fellowship, the ARCS Fellowship, the NIH-T15 Fellowship, and being recognized as UCSD’s Biomedical Informatics Trainee of the Year.</p>
           </div>
         </div>
       </div>
@@ -438,6 +429,7 @@
           </div>
           <p class="cv-org">Bristol Myers Squibb — Manatí, PR</p>
         </div>
+      </div> <!-- This is the closing tag that was missing previously -->
 
       <!-- PUBLICATIONS TAB -->
       <div id="tab-publications" class="tab-content">
