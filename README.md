@@ -1,3 +1,3 @@
 # Wilfredo Gabriel Gonzalez Rivera 
-Personal Portfolio Website
-Coming soon!
+Personal Portfolio Website 
+Last Update: September 26th 2026
