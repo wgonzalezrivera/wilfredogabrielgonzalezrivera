@@ -95,11 +95,36 @@
       color: var(--text-main);
       margin: 0 0 24px;
     }
+    
+    /* Organized Hero Tags */
     .hero-tags {
-      font-size: 15px;
-      line-height: 1.9;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .hero-tags li {
+      font-size: 16px;
+      line-height: 1.4;
+      color: var(--text-main);
+    }
+    .hero-tags .tag-title {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
       color: var(--text-muted);
-      margin-bottom: 40px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .hero-tags .tag-sub {
+      display: block;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      font-style: italic;
     }
     
     /* Elegant Link Style */
@@ -268,7 +293,7 @@
 <body>
   <header class="topbar shell">
     <a class="wordmark" href="#top" aria-label="Wilfredo Gabriel Gonzalez Rivera, home">
-      Wilfredo Gabriel
+      Wilfredo Gabriel Gonzalez Rivera
     </a>
     <nav class="nav" aria-label="Main navigation">
       <a href="#about">About</a>
@@ -287,14 +312,23 @@
         </p>
       </div>
       <div class="hero-aside reveal delay">
-        <div class="hero-tags">
-          PK/PD & PMx AI/ML TDA intern @ Eli Lilly <br>
-          Biomedical Informatics Ph.D. candidate @ UCSD <br>
-          Gymrek/Frazer Lab <br>
-          NLM T15 Fellow | Sloan Fellow | ARCS Fellow <br>
-          2026 SMDP Scholar <br>
-          prev @ Eli Lilly, BMS
-        </div>
+        <ul class="hero-tags">
+          <li>
+            <span class="tag-title">Education & Research</span>
+            Biomedical Informatics Ph.D. candidate @ UCSD
+            <span class="tag-sub">Gymrek/Frazer Lab</span>
+          </li>
+          <li>
+            <span class="tag-title">Industry Experience</span>
+            PK/PD & PMx AI/ML TDA intern @ Eli Lilly
+            <span class="tag-sub">Previously @ Eli Lilly, BMS</span>
+          </li>
+          <li>
+            <span class="tag-title">Fellowships & Honors</span>
+            NLM T15 Fellow | Sloan Fellow | ARCS Fellow
+            <span class="tag-sub">2026 SMDP Scholar</span>
+          </li>
+        </ul>
         <a class="text-link" href="https://pr.linkedin.com/in/wilfredo-gabriel-gonzalez-rivera" target="_blank" rel="noopener noreferrer">
           View LinkedIn profile <span aria-hidden="true">↗</span>
         </a>
