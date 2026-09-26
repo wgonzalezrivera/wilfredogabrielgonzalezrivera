@@ -6,22 +6,19 @@
   <meta name="theme-color" content="#FAFAF8">
   <meta name="description" content="The portfolio of Wilfredo Gabriel Gonzalez Rivera.">
   <title>Wilfredo Gabriel Gonzalez Rivera — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Elegant Font Pairing: Playfair Display for headings, Inter for body text -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <style>
     :root {
       color-scheme: light;
       --bg-main: #FAFAF8;
       --bg-alt: #F2F2EE;
-      --text-main: #2A2A2A;
-      --text-muted: #73736E;
-      --border-color: #E2E2DD;
-      --accent: #4A5C6A; /* Sophisticated slate blue */
+      --text-main: #000000; /* Solid Black */
+      --text-muted: #444444; /* Darker gray for better contrast */
+      --border-color: #CCCCCC;
+      --accent: #2C3E50; /* Deep slate */
       
-      --font-heading: 'Playfair Display', serif;
-      --font-body: 'Inter', sans-serif;
+      /* Classic Georgia Font */
+      --font-heading: Georgia, 'Times New Roman', Times, serif;
+      --font-body: Georgia, 'Times New Roman', Times, serif;
     }
 
     * { box-sizing: border-box; }
@@ -42,9 +39,9 @@
     /* Small overline text */
     .eyebrow {
       font-family: var(--font-body);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 1.5px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--text-muted);
       margin-bottom: 12px;
@@ -64,14 +61,13 @@
     }
     .wordmark {
       font-family: var(--font-heading);
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: -0.2px;
+      font-size: 22px;
+      font-weight: normal;
+      letter-spacing: 0;
     }
     .nav { display: flex; align-items: center; gap: 40px; }
     .nav a { 
-      font-size: 13px; 
-      font-weight: 400; 
+      font-size: 14px; 
       color: var(--text-muted);
       transition: color 0.3s ease; 
     }
@@ -88,24 +84,22 @@
     h1 {
       font-family: var(--font-heading);
       font-size: clamp(42px, 6vw, 72px);
-      font-weight: 400;
+      font-weight: normal;
       line-height: 1.1;
-      letter-spacing: -1px;
+      letter-spacing: -0.5px;
       margin: 0 0 24px 0;
       color: var(--text-main);
     }
     .hero-aside p {
       font-size: 20px;
-      font-weight: 300;
       color: var(--text-main);
       margin: 0 0 24px;
     }
     .hero-tags {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.9;
       color: var(--text-muted);
       margin-bottom: 40px;
-      font-weight: 300;
     }
     
     /* Elegant Link Style */
@@ -113,8 +107,7 @@
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 15px;
       color: var(--accent);
       border-bottom: 1px solid transparent;
       padding-bottom: 4px;
@@ -142,29 +135,28 @@
       max-width: 320px;
       aspect-ratio: 3/4;
       object-fit: cover;
-      border-radius: 4px; /* Subtle elegant curve */
-      box-shadow: 0 10px 30px rgba(0,0,0,0.04); /* Soft shadow */
+      border-radius: 4px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
     .about h2 { 
       font-family: var(--font-heading); 
-      font-size: 32px; 
-      font-weight: 400; 
+      font-size: 34px; 
+      font-weight: normal; 
       margin: 0; 
     }
     .about-copy { max-width: 700px; padding-top: 10px; }
     .about-copy p.lead { 
       font-family: var(--font-heading);
       font-size: clamp(24px, 3vw, 32px); 
-      line-height: 1.4; 
+      line-height: 1.45; 
       margin: 0 0 30px; 
       color: var(--text-main);
     }
     .about-copy p.body-text { 
-      font-size: 15px; 
+      font-size: 16px; 
       line-height: 1.8; 
       color: var(--text-muted); 
       margin: 0 0 20px;
-      font-weight: 300;
     }
 
     /* Publications Section */
@@ -176,7 +168,7 @@
     .pub-band h2 { 
       font-family: var(--font-heading);
       font-size: clamp(36px, 4vw, 48px); 
-      font-weight: 400; 
+      font-weight: normal; 
       margin: 0 0 60px 0; 
     }
     .pub-list {
@@ -193,25 +185,23 @@
       transition: background-color 0.4s ease;
     }
     .pub-item:hover {
-      background-color: rgba(255,255,255,0.4);
+      background-color: rgba(255,255,255,0.6);
     }
     .pub-item .date { 
-      font-size: 13px; 
+      font-size: 14px; 
       color: var(--text-muted);
-      font-weight: 400;
     }
     .pub-item h3 { 
       font-family: var(--font-heading);
       margin: 0; 
-      font-size: 20px; 
-      font-weight: 500; 
+      font-size: 22px; 
+      font-weight: normal; 
       line-height: 1.4; 
       max-width: 700px;
     }
     .pub-item .link-out {
       color: var(--accent);
-      font-size: 13px;
-      font-weight: 500;
+      font-size: 14px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -231,7 +221,7 @@
     .contact h2 { 
       font-family: var(--font-heading);
       font-size: clamp(40px, 6vw, 64px); 
-      font-weight: 400; 
+      font-weight: normal; 
       margin: 0 0 40px; 
     }
     
@@ -241,7 +231,7 @@
       display: flex; 
       justify-content: space-between; 
       align-items: center; 
-      font-size: 12px;
+      font-size: 13px;
       color: var(--text-muted); 
     }
     footer a:hover { color: var(--text-main); }
@@ -269,7 +259,7 @@
     @media (max-width: 600px) {
       .shell { width: calc(100% - 40px); }
       .nav { gap: 20px; }
-      .nav a:nth-child(2) { display: none; } /* Hide 'Publications' on small screens for space */
+      .nav a:nth-child(2) { display: none; }
       h1 { font-size: 40px; }
       .contact { padding: 80px 0; }
     }
@@ -292,7 +282,7 @@
       <div class="reveal">
         <div class="eyebrow">Portfolio · 2026</div>
         <h1 id="intro-title">Wilfredo Gabriel<br>Gonzalez Rivera</h1>
-        <p style="font-size: 18px; color: var(--text-muted); font-family: var(--font-heading); font-style: italic;">
+        <p style="font-size: 20px; color: var(--text-muted); font-family: var(--font-heading); font-style: italic;">
           100% 🇵🇷
         </p>
       </div>
@@ -317,7 +307,7 @@
       </div>
       <div class="about-copy">
         <div class="eyebrow">01 / Background</div>
-        <p class="lead">Wilfredo is a first-generation, low-income PhD candidate from Vega Baja, Puerto Rico, in the Biomedical Informatics program at the University of California, San Diego.</p>
+        <p class="lead">Wilfredo is a PhD candidate from Vega Baja, Puerto Rico, in the Biomedical Informatics program at the University of California, San Diego.</p>
         
         <p class="body-text">He earned two bachelor’s degrees in computer science and biotechnology from the University of Puerto Rico at Mayagüez. His research combines AI/ML in genetics, genomics, and social science to understand the underlying source of health disparities, especially among admixed individuals in genetic studies.</p>
         
